@@ -121,7 +121,10 @@ class Login extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Signup()));
+                      },
                       child: Stack(
                         alignment: Alignment.bottomCenter,
                         children: [
