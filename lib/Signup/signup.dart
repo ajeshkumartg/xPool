@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:xPool/HomePage/Home.dart';
+import 'package:xPool/HomePage/Landing.dart';
 import 'package:xPool/Signup/signUptext.dart';
 import 'package:xPool/login/Login.dart';
 

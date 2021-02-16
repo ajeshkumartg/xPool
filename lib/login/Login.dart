@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-// import 'package:xPool/main.dart';
+import 'package:xPool/HomePage/Landing.dart';
 import 'package:xPool/Signup/signup.dart';
 import 'package:xPool/facebook.dart';
-
 import 'package:xPool/login/loginText.dart';
 
 class Login extends StatelessWidget {
@@ -57,22 +54,28 @@ class Login extends StatelessWidget {
                 SizedBox(
                   height: 40,
                 ),
-                Container(
-                  width: 330,
-                  height: 50,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                          colors: [Colors.greenAccent, Colors.green[100]]),
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.greenAccent),
-                  child: Text(
-                    'Sign in',
-                    style: GoogleFonts.montserrat(
-                        color: Colors.white70,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16),
+                GestureDetector(
+                  child: Container(
+                    width: 330,
+                    height: 50,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                            colors: [Colors.greenAccent, Colors.green[100]]),
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.greenAccent),
+                    child: Text(
+                      'Sign in',
+                      style: GoogleFonts.montserrat(
+                          color: Colors.white70,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16),
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Home()));
+                  },
                 ),
                 SizedBox(
                   height: 35,

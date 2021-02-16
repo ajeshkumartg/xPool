@@ -1,37 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Home extends StatefulWidget {
-  Home({Key key}) : super(key: key);
-
-  @override
-  _HomeState createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
+class Intro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        // currentIndex: 1,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.location_pin,
-            ),
-            label: 'Ride',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          ),
-        ],
+      // appBar: AppBar(
+      //   title: Text('Title'),
+      // ),
+
+      body: Container(
+        child: Image.network(
+            'https://images.vexels.com/media/users/3/127817/isolated/preview/4fd0c9dcae60a9a63579b9b6853eeb09-glossy-retro-beetle-car-by-vexels.png'),
       ),
-      body: Container(),
     );
   }
 }
