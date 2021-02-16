@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:xPool/Intro/Intro1.dart';
-import 'package:xPool/Intro/intro2.dart';
 
-class Home1 extends StatelessWidget {
+import 'package:xPool/Intro/launch2.dart';
+
+class launch1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -83,7 +83,7 @@ Xpool allows you to find a ride from your nearest location.''',
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Home2(),
+                builder: (context) => launch2(),
               ));
         },
         child: Icon(Icons.arrow_forward_ios_rounded),

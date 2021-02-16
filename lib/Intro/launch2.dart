@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:xPool/Intro/Intro1.dart';
-import 'package:xPool/Intro/intro3.dart';
 
-class Home2 extends StatelessWidget {
+import 'package:xPool/Intro/launch3.dart';
+
+class launch2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,7 +82,7 @@ Others can offer a ride through Xpool. Hence, the number of cars on road can be 
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Home3(),
+                builder: (context) => launch3(),
               ));
         },
         child: Icon(Icons.arrow_forward_ios_rounded),

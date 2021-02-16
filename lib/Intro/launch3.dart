@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:xPool/Intro/Intro1.dart';
-import 'package:xPool/Intro/intro2.dart';
-import 'package:xPool/Signup/Login.dart';
-import 'package:xPool/main.dart';
+import 'package:xPool/login/Login.dart';
 
-class Home3 extends StatelessWidget {
+class launch3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
