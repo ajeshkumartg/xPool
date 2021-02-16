@@ -13,10 +13,10 @@ class launch2 extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
-            child: Stack(
+            child: Column(
               children: <Widget>[
                 Container(
-                  padding: EdgeInsets.fromLTRB(20, 110, 0, 0),
+                  margin: EdgeInsets.fromLTRB(20, 110, 0, 0),
                   child: Center(
                     child: Image(
                       image: AssetImage('assets/images/nature.png'),
@@ -27,7 +27,7 @@ class launch2 extends StatelessWidget {
                   height: 10.0,
                 ),
                 Container(
-                  padding: EdgeInsets.fromLTRB(45, 370, 0, 0),
+                  // padding: EdgeInsets.fromLTRB(45, 370, 0, 0),
                   child: Text(
                     'Less Emission...',
                     textAlign: TextAlign.center,
@@ -35,13 +35,13 @@ class launch2 extends StatelessWidget {
                       color: Colors.black,
                       fontFamily: 'YuseiMagic',
                       fontWeight: FontWeight.bold,
-                      fontSize: 30.0,
+                      fontSize: 26.0,
                     ),
                   ),
                 ),
-                SizedBox(height: 5.0),
+                // SizedBox(height: 5.0),
                 Container(
-                  padding: EdgeInsets.fromLTRB(110, 420, 0, 0),
+                  //padding: EdgeInsets.fromLTRB(110, 420, 0, 0),
                   child: Text(
                     'More Green...',
                     textAlign: TextAlign.center,
@@ -56,17 +56,20 @@ class launch2 extends StatelessWidget {
                 SizedBox(
                   height: 20.0,
                 ),
-                Container(
-                  padding: EdgeInsets.only(top: 500),
-                  child: Text(
-                    '''
-Others can offer a ride through Xpool. Hence, the number of cars on road can be reduced. Lesser the cars,lesser the emissions. ''',
-                    style: TextStyle(
-                      color: Colors.black54,
-                      fontFamily: 'YuseiMagic',
-                      fontSize: 18.0,
+                SizedBox(
+                  height: 150,
+                  width: 260,
+                  child: Container(
+                    //padding: EdgeInsets.only(top: 500),
+                    child: Text(
+                      '''Car owners can share free space space with others. So, the number of cars can be reduced...''',
+                      style: TextStyle(
+                        color: Colors.black54,
+                        fontFamily: 'YuseiMagic',
+                        fontSize: 18.0,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
                   ),
                 ),
               ],
