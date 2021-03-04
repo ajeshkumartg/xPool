@@ -9,8 +9,10 @@ class Intro extends StatelessWidget {
       // ),
 
       body: Container(
-        child: Image.network(
-            'https://images.vexels.com/media/users/3/127817/isolated/preview/4fd0c9dcae60a9a63579b9b6853eeb09-glossy-retro-beetle-car-by-vexels.png'),
+        child: Center(
+          child: Image.network(
+              'https://www.volacci.com/sites/default/files/styles/blog_main_image/public/blog/image/404%20error.png?itok=K1adpBHD'),
+        ),
       ),
     );
   }

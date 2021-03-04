@@ -10,9 +10,9 @@ void main() => runApp(XPool());
 class XPool extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
-    ]);
+    // SystemChrome.setPreferredOrientations([
+    //   DeviceOrientation.portraitUp,
+    // ]);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'XPool Car pooling',
