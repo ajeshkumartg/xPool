@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:xPool/HomePage/Home.dart';
-import 'package:ff_navigation_bar/ff_navigation_bar.dart';
-import 'package:xPool/Search/title.dart';
 import 'package:xPool/Search/Search.dart';
 
 class Home extends StatefulWidget {
@@ -13,7 +11,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
-  @override
+
   List<Widget> _CurrentPage = [
     Intro(),
     Search(),

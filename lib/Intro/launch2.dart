@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:xPool/Intro/launch3.dart';
 
-class launch2 extends StatelessWidget {
+class Launch2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -85,7 +85,7 @@ class launch2 extends StatelessWidget {
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => launch3(),
+                builder: (context) => Launch3(),
               ));
         },
         child: Icon(Icons.arrow_forward_ios_rounded),

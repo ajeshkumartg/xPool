@@ -92,7 +92,7 @@ Xpool allows you to find a ride from your nearest location.''',
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => launch2(),
+                builder: (context) => Launch2(),
               ));
         },
         child: Icon(Icons.arrow_forward_ios_rounded),

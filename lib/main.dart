@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:xPool/Intro/launch1.dart';
-import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 //import 'package:xPool/Home1.dart';
 //import 'package:flutter_launcher_icons/android.dart';

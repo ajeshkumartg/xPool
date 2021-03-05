@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:xPool/login/Login.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:xPool/Signin/Signin.dart';
 
-class launch3 extends StatelessWidget {
+class Launch3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -81,12 +82,15 @@ By getting a pool ride through Xpool, you can save fueling and service costs.   
       floatingActionButton: FloatingActionButton.extended(
         hoverElevation: 8.0,
         hoverColor: Colors.yellow,
-        label: Text('''Get Started'''),
+        label: Text(
+          '''Get Started''',
+          style: GoogleFonts.montserrat(),
+        ),
         onPressed: () {
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Login(),
+                builder: (context) => Signin(),
               ));
         },
       ),

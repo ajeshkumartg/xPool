@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:xPool/HomePage/Landing.dart';
-import 'package:xPool/Signin/Signin.dart';
 import 'package:xPool/Signup/signUpTitle.dart';
 
-class Signup extends StatelessWidget {
+class Signin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,25 +52,25 @@ class Signup extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 35,
+              height: 3,
             ),
             Center(
               child: Column(
                 children: [
-                  Container(
-                    width: 330,
-                    decoration: BoxDecoration(
-                        // border:
-                        ),
-                    child: TextFormField(
-                      keyboardType: TextInputType.name,
-                      decoration: InputDecoration(
-                          labelText: 'Full Name',
-                          hintText: 'John Doe',
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15))),
-                    ),
-                  ),
+                  // Container(
+                  //   width: 330,
+                  //   decoration: BoxDecoration(
+                  //       // border:
+                  //       ),
+                  //   child: TextFormField(
+                  //     keyboardType: TextInputType.name,
+                  //     decoration: InputDecoration(
+                  //         labelText: 'Full Name',
+                  //         hintText: 'John Doe',
+                  //         border: OutlineInputBorder(
+                  //             borderRadius: BorderRadius.circular(15))),
+                  //   ),
+                  // ),
                   SizedBox(
                     height: 25,
                   ),
@@ -138,35 +137,38 @@ class Signup extends StatelessWidget {
                   SizedBox(
                     height: 50,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Already have an account?',
-                        style: GoogleFonts.montserrat(
-                            color: Colors.green[300],
-                            // fontWeight: FontWeight.bold,
-                            fontSize: 16),
-                      ),
-                      SizedBox(
-                        width: 4,
-                      ),
-                      InkWell(
-                        child: Text(
-                          'Sign in',
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Already have an account?',
                           style: GoogleFonts.montserrat(
                               color: Colors.green[300],
-                              fontWeight: FontWeight.bold,
+                              // fontWeight: FontWeight.bold,
                               fontSize: 16),
                         ),
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Signin()));
-                        },
-                      ),
-                    ],
+                        SizedBox(
+                          width: 4,
+                        ),
+                        InkWell(
+                          child: Text(
+                            'Sign in',
+                            style: GoogleFonts.montserrat(
+                                color: Colors.green[300],
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16),
+                          ),
+                          onTap: () {
+                            // Navigator.push(
+                            //     context,
+                            //     MaterialPageRoute(
+                            //         builder: (context) => Signin()));
+                          },
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
