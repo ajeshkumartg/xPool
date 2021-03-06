@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:xPool/HomePage/Landing.dart';
-import 'package:xPool/Signup/signUpTitle.dart';
+import 'package:xPool/Signin/SigninTitle.dart';
+import 'package:xPool/Signup/signup.dart';
 
-class Signin extends StatelessWidget {
+class Signin extends StatefulWidget {
+  @override
+  _SigninState createState() => _SigninState();
+}
+
+class _SigninState extends State<Signin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,7 +18,7 @@ class Signin extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            SignupTitle(),
+            SigninTitle(),
             SizedBox(
               height: 20,
             ),
@@ -82,8 +87,12 @@ class Signin extends StatelessWidget {
                     child: TextFormField(
                       keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
+                          prefixIcon: Icon(
+                            Icons.mail,
+                            size: 20,
+                          ),
                           labelText: 'Email ID',
-                          hintText: 'johndoe@email.com',
+                          hintText: 'youremail@domain.com',
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(15))),
                     ),
@@ -99,8 +108,11 @@ class Signin extends StatelessWidget {
                     child: TextFormField(
                       obscureText: true,
                       decoration: InputDecoration(
+                          prefixIcon: Icon(
+                            Icons.lock,
+                            size: 20,
+                          ),
                           labelText: 'Password',
-                          hintText: 'Pick a strong password',
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(15))),
                     ),
@@ -119,52 +131,53 @@ class Signin extends StatelessWidget {
                         color: Colors.greenAccent),
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Home()));
+                        // Navigator.push(context,
+                        //     MaterialPageRoute(builder: (context) => Home()));
                       },
                       child: Text(
-                        'Sign up',
+                        'Log in',
                         style: GoogleFonts.montserrat(
-                            color: Colors.white70,
+                            color: Colors.black38,
                             fontWeight: FontWeight.bold,
                             fontSize: 16),
                       ),
                     ),
                   ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  SizedBox(
-                    height: 50,
-                  ),
-                  Align(
-                    alignment: Alignment.bottomRight,
+                  // SizedBox(
+                  //   height: 30,
+                  // ),
+                  // SizedBox(
+                  //   height: 50,
+                  // ),
+                  Container(
+                    height: 200,
+                    alignment: Alignment.bottomCenter,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Already have an account?',
+                          'New to xPool?',
                           style: GoogleFonts.montserrat(
                               color: Colors.green[300],
                               // fontWeight: FontWeight.bold,
-                              fontSize: 16),
+                              fontSize: 15),
                         ),
                         SizedBox(
                           width: 4,
                         ),
                         InkWell(
                           child: Text(
-                            'Sign in',
+                            'Create an account',
                             style: GoogleFonts.montserrat(
                                 color: Colors.green[300],
                                 fontWeight: FontWeight.bold,
-                                fontSize: 16),
+                                fontSize: 15),
                           ),
                           onTap: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //         builder: (context) => Signin()));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Signup()));
                           },
                         ),
                       ],

@@ -5,7 +5,12 @@ import 'package:xPool/HomePage/Landing.dart';
 import 'package:xPool/Signin/Signin.dart';
 import 'package:xPool/Signup/signUpTitle.dart';
 
-class Signup extends StatelessWidget {
+class Signup extends StatefulWidget {
+  @override
+  _SignupState createState() => _SignupState();
+}
+
+class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,6 +71,7 @@ class Signup extends StatelessWidget {
                     child: TextFormField(
                       keyboardType: TextInputType.name,
                       decoration: InputDecoration(
+                          prefixIcon: Icon(Icons.person, size: 20),
                           labelText: 'Full Name',
                           hintText: 'John Doe',
                           border: OutlineInputBorder(
@@ -83,6 +89,10 @@ class Signup extends StatelessWidget {
                     child: TextFormField(
                       keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
+                          prefixIcon: Icon(
+                            Icons.mail,
+                            size: 20,
+                          ),
                           labelText: 'Email ID',
                           hintText: 'johndoe@email.com',
                           border: OutlineInputBorder(
@@ -100,6 +110,7 @@ class Signup extends StatelessWidget {
                     child: TextFormField(
                       obscureText: true,
                       decoration: InputDecoration(
+                          prefixIcon: Icon(FontAwesomeIcons.lock, size: 20),
                           labelText: 'Password',
                           hintText: 'Pick a strong password',
                           border: OutlineInputBorder(
@@ -126,7 +137,7 @@ class Signup extends StatelessWidget {
                       child: Text(
                         'Sign up',
                         style: GoogleFonts.montserrat(
-                            color: Colors.white70,
+                            color: Colors.black38,
                             fontWeight: FontWeight.bold,
                             fontSize: 16),
                       ),
